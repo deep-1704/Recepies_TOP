@@ -1,0 +1,10 @@
+import random
+import string
+
+def generate_random_text(length):
+    random_text = ''.join(random.choices(string.ascii_letters + string.digits, k=length))
+    return random_text
+
+# Example usage
+random_text = generate_random_text(10)
+print(random_text)
